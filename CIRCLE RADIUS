@@ -1,0 +1,14 @@
+package com.sample;
+
+public class Areaofcircle {
+	public static void main(String[] args) {
+	float radius = 25f;
+	float pi = 3.14f;
+    double area = pi*radius*radius;
+	System.out.println(" Area of the circle is: " + area);
+			
+	}
+}
+
+OUTPUT:
+Area of the circle is: 1962.5
