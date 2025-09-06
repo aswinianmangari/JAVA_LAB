@@ -1,0 +1,38 @@
+package com.sample;
+import java.lang.*;
+import java.util.Scanner;
+public class Arthimaticoperators {
+	public static void main(String[] args) {
+		Scanner ar = new Scanner(System.in);
+		System.out.println("Enter a number: ");
+		int num1 = ar.nextInt();
+		System.out.println("Enter another number: ");
+		int num2 = ar.nextInt();
+		int add = num1+num2;
+		int sub = num1-num2;
+		int mul = num1*num2;
+		int div = num1/num2;
+		int mod = num1%num2;
+		
+		System.out.println("Addition of two numbers is: "+ add);
+		System.out.println("Subtraction of two numbers is: "+ sub);
+		System.out.println("Multiplication of two numbers is: "+ mul);
+		System.out.println("Division of two numbers is: "+ div);
+		System.out.println("Modulus of two numbers is: "+ mod);
+		
+		
+		
+	}
+
+}
+
+OUTPUT:
+Enter a number: 
+10
+Enter another number: 
+20
+Addition of two numbers is: 30
+Subtraction of two numbers is: -10
+Multiplication of two numbers is: 200
+Division of two numbers is: 0
+Modulus of two numbers is: 10
