@@ -1,0 +1,28 @@
+package Com.aswini;
+class A {
+    void display()
+    { System.out.println("A"); }
+}
+class B extends A {
+    void show()
+    { System.out.println("B"); }
+}
+class C extends B {
+    void print() 
+    { System.out.println("C"); }
+}
+
+public class Multilevel_inheritance {
+
+    public static void main(String[] args) {
+        C mul=new C();
+        mul.display();
+        mul.show();
+        mul.print();
+
+    }
+
+}
+
+OUTPUT:
+A B C
