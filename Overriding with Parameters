@@ -56,3 +56,9 @@ public class overrideParameters {
 
 	}
 }
+
+OUTPUT:
+Animals make diffrent sounds.
+DOG BARKS:WOOF!
+CAT SAYS:MEOW!
+
