@@ -1,0 +1,58 @@
+package Com.aswini;
+
+class animal{
+
+	public void makeSound(String sound) {
+
+		System.out.println("Animals make " + sound );
+
+	}
+
+}
+
+class dog extends animal{
+
+	@Override
+
+	public void makeSound(String sound) {
+
+		System.out.println("DOG BARKS:" + sound);
+
+	}
+
+}
+
+class cat extends animal{
+
+	@Override
+
+	public void makeSound(String sound) {
+
+		System.out.println("CAT SAYS:" + sound);
+
+	}
+
+}
+
+public class overrideParameters {
+
+
+
+ public static void main(String[] args) {
+
+		// TODO Auto-generated method stub
+
+	    animal r =  new animal();
+
+		r.makeSound("diffrent sounds.");
+
+		dog d = new dog();
+
+		d.makeSound("WOOF!");
+
+		cat c = new cat();
+
+	  c.makeSound("MEOW!");
+
+	}
+}
