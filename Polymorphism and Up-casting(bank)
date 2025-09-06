@@ -1,0 +1,56 @@
+package Com.aswini;
+class rbiBank{
+	
+	public double getRateOfIntrest() {
+		return 5.0;
+	}
+}
+class sbi extends rbiBank{
+	@Override
+	public double getRateOfIntrest() {
+		return 6.5;
+	}
+	public void specialFeature() {
+		System.out.println("PROVIDES ZERO INTREST LOAN");
+	}
+}
+class icici extends rbiBank{
+	@Override 
+	public double getRateOfIntrest() {
+		return 7.5;
+	}
+}
+class hdfc extends rbiBank{
+	@Override
+	public double getRateOfIntrest() {
+		return 8.3;
+	}
+}
+public class Bank {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		rbiBank rb = new rbiBank();
+		rbiBank rb1 = new sbi(); //UPCASTING
+		sbi sb = new sbi();
+		icici ic = new icici();
+		hdfc hd = new hdfc();
+		
+		System.out.println("RBI RATE OF INTREST-" + rb.getRateOfIntrest());
+		System.out.println("SBI RATE OF INTREST-" + sb.getRateOfIntrest());
+		System.out.println("ICICI RATE OF INTREST-" + ic.getRateOfIntrest());
+		System.out.println("NEW SBI RATE OF INTREST-" + rb1.getRateOfIntrest());
+		System.out.println("HDFC RATE OF INTREST-" + hd.getRateOfIntrest());
+		
+		sb.specialFeature();
+	}
+
+}
+
+
+OUTPUT:
+SBI RATE OF INTREST-6.5
+ICICI RATE OF INTREST-7.5
+NEW SBI RATE OF INTREST-6.5
+HDFC RATE OF INTREST-8.3
+PROVIDES ZERO INTREST LOAN
